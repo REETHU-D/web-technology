@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deactivate Account</title>
+  <style>
+    h1 
+    {
+        background-color: lightslategray;
+        color:indigo;
+        text-align: center;
+    }
+     body
+     {
+         background-color:lightsteelblue;
+        color:blueviolet;
+        text-align: center;
+
+     }
+  </style>
+</head>
+<body>
+  <h1>Social Media Account Deactivation Form</h1>
+  <form action="/submit-deactivation" method="post">
+    
+    <label for="username">Username :</label><br>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <label for="reason">Reason for Deactivation:</label><br>
+    <select id="reason" name="reason" required>
+      <option value="">--Select a reason--</option>
+      <option value="privacy">Privacy concerns</option>
+      <option value="addiction">Too much time on social media</option>
+      <option value="not_useful">Not useful anymore</option>
+      <option value="temporary">Temporary break</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <label for="comments">Additional Comments (optional):</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Write here..."></textarea><br><br>
+
+    <label for="password">Confirm Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <input type="checkbox" id="confirm" name="confirm" required>
+    <label for="confirm">I understand that my account will be deactivated.</label><br><br>
+
+    <button type="submit">Deactivate Account</button>
+    <button type="reset">Cancel</button>
+
+  </form>
+  
+</body>
+</html>

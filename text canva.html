@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas Text</title>
+  <style>
+    canvas {
+      border: 2px solid rgb(0, 0, 0);
+    }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas" width="500" height="250"></canvas>
+
+  <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+
+    // Filled text
+    ctx.font = "30px Arial";
+    ctx.fillStyle = "black";
+    ctx.fillText("Hello Canvas", 20, 50);
+
+    // Stroked text
+    ctx.font = "30px Arial";
+    ctx.strokeStyle = "red";
+    ctx.strokeText("SAI", 10, 90);
+  </script>
+</body>
+</html>

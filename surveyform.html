@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Survey Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 60%;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      background-color: #ccc;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      background: #2c3e50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .btn:hover {
+      background: #1abc9c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>University Survey Form</h1>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="department">Department:</label>
+      <select id="department" name="department" required>
+        <option value="">--Select Department--</option>
+        <option>Computer Science</option>
+        <option>Electronics</option>
+        <option>Mechanical</option>
+        <option>Civil</option>
+        <option>Other</option>
+      </select>
+
+      <label>Year of Study:</label>
+      <input type="radio" name="year" value="1st Year"> 1st Year<br>
+      <input type="radio" name="year" value="2nd Year"> 2nd Year<br>
+      <input type="radio" name="year" value="3rd Year"> 3rd Year<br>
+      <input type="radio" name="year" value="4th Year"> 4th Year<br>
+
+      <label for="feedback">Your Feedback:</label>
+      <textarea id="feedback" name="feedback" rows="5" placeholder="Write your feedback here..."></textarea>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
